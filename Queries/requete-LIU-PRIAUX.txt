@@ -1,3 +1,10 @@
+?di2 se:hasIndication - |ctd:hasIndication - /groupe2  ?g2
+
+groupe 2 :
+pgkb:affectsEfficiency|pgkb:affectsDosage|pgkb:affectsToxicity|ctd:affectsResponseToSubstance|ctd:affectsReaction
+
+---------------------------------------------------------------------
+
 prefix se: <http://telecomnancy.eu/se/>
 prefix ctd: <http://telecomnancy.eu/ctd/>
 prefix omim: <http://telecomnancy.eu/omim/>
@@ -10,7 +17,7 @@ prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?diseasename ?genename
 WHERE {
 
-  # On récupère les ?genename qui nous intéressent ...
+  # On rï¿½cupï¿½re les ?genename qui nous intï¿½ressent ...
 
     # ... Avec les relations de ctd qui nous concernent ...
    {
@@ -29,7 +36,7 @@ WHERE {
 	}
     }
 
-    # Jointure faite avec ?somedrug. On recupère les maladies liées.
+    # Jointure faite avec ?somedrug. On recupï¿½re les maladies liï¿½es.
     {
         SERVICE <http://plbc2014.telecomnancy.univ-lorraine.fr:10003/sider/query> {
             ?disease rdfs:hasLabel ?diseasename .
